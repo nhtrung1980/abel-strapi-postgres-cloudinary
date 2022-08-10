@@ -1,0 +1,5 @@
+###
+GET http://localhost:1337/api/posts?populate=*&fields[0]=Title&fields[1]=excerpt
+
+###
+GET http://localhost:1337/api/posts?populate=*
