@@ -12,20 +12,33 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Tile": {
+    "title": {
       "type": "string",
       "required": true
     },
-    "Slug": {
-      "type": "string",
-      "unique": true,
-      "required": true
+    "excerpt": {
+      "type": "text"
     },
-    "Excerpt": {
-      "type": "string"
-    },
-    "Content": {
+    "content": {
       "type": "richtext"
+    },
+    "terms": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::term.term",
+      "inversedBy": "posts"
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "required": true
     }
   }
 }
