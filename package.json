@@ -1,5 +1,5 @@
 {
-  "name": "strapi-postgres-cloudinary",
+  "name": "myblog",
   "private": true,
   "version": "0.1.0",
   "description": "A Strapi application",
@@ -9,25 +9,22 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
-    "@strapi/strapi": "4.3.4",
-    "@strapi/plugin-users-permissions": "4.1.7",
-    "@strapi/plugin-i18n": "4.1.7",
+    "@strapi/plugin-i18n": "4.3.2",
+    "@strapi/plugin-users-permissions": "4.3.2",
     "@strapi/provider-upload-cloudinary": "4.1.7",
-    "pg": "^8.7.0",
-    "pg-connection-string": "^2.5.0",
-    "sqlite3": "latest",
+    "@strapi/strapi": "4.3.2",
+    "better-sqlite3": "7.4.6",
     "slugify": "^1.6.5"
   },
   "author": {
     "name": "A Strapi developer"
   },
   "strapi": {
-    "uuid": "5dbc738b-6a52-4a78-a46c-eed70aa61c15"
+    "uuid": "607df379-0e24-4969-b5cd-dfb82f47039f"
   },
   "engines": {
-    "node": ">=10.0.0",
+    "node": ">=12.x.x <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
