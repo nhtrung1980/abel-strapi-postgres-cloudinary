@@ -1,7 +1,7 @@
 {
   "name": "myblog",
   "private": true,
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A Strapi application",
   "scripts": {
     "develop": "strapi develop",
@@ -10,13 +10,17 @@
     "strapi": "strapi"
   },
   "dependencies": {
+    "@_sh/strapi-plugin-ckeditor": "^1.1.1",
     "@strapi/plugin-i18n": "4.3.2",
     "@strapi/plugin-users-permissions": "4.3.2",
     "@strapi/provider-upload-cloudinary": "4.1.7",
     "@strapi/strapi": "4.3.2",
     "better-sqlite3": "7.4.6",
     "slugify": "^1.6.5",
-    "pg": "8.6.0"
+    "pg": "8.6.0",
+    "strapi-plugin-react-editorjs": "^2.0.1",
+    "strapi-plugin-rest-cache": "^4.2.4",
+    "strapi-provider-rest-cache-couchbase": "^4.2.4"
   },
   "author": {
     "name": "A Strapi developer"

@@ -1,0 +1,5 @@
+###
+GET http://abel.nuochoatot.info/api/posts?populate=*&fields[0]=title&fields[1]=excerpt&fields[3]=slug&fields[4]=publishedAt&sort[id]=desc
+
+###
+GET http://abel.nuochoatot.info/api/posts?populate=*
