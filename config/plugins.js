@@ -16,16 +16,10 @@ module.exports = ({ env }) => ({
   "rest-cache": {
     config: {
       provider: {
-        name: "couchbase",
-        max: 32767,
+        name: "memory",
         options: {
-          connectionString: "couchbase://127.0.0.1:8091",
-          connectionOptions: {
-            username: "nhtrung1980@gmail.com",
-            password: "04UCth664@@",
-          },
-          bucket: "test-bucket",
-          ttl: 2,
+          max: 32767,
+          maxAge: 3600,
         },
       },
       strategy: {
