@@ -15,7 +15,7 @@ module.exports = [
     },
   },
   "strapi::cors",
-  "strapi::poweredBy"
+  "strapi::poweredBy",
   {
     name: 'strapi::cors',
     config: {
